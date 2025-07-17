@@ -1,0 +1,75 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 14px 24px;
+  background-color: var(--bg);
+  color: var(--text);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  border-radius: 0 0 12px 12px;
+}
+
+.nav-left, .nav-right {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+.logo {
+  font-size: 1.4rem;
+  font-weight: bold;
+  margin-right: 10px;
+  color: var(--primary);
+}
+
+.nav-link {
+  text-decoration: none;
+  color: var(--text);
+  font-weight: 500;
+  padding: 6px 12px;
+  border-radius: 6px;
+  transition: background 0.2s, color 0.2s;
+}
+
+.nav-link:hover {
+  background-color: var(--primary-light);
+  color: white;
+}
+
+.nav-btn, .mode-toggle {
+  padding: 6px 12px;
+  border: none;
+  border-radius: 6px;
+  background: var(--primary);
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  transition: transform 0.2s, background 0.3s;
+}
+
+.nav-btn:hover, .mode-toggle:hover {
+  transform: scale(1.05);
+  background: var(--primary-dark);
+}
+
+.user-email {
+  font-weight: 500;
+}
+
+/* Dark Mode Variables */
+:root {
+  --primary: #007bff;
+  --primary-light: #339dff;
+  --primary-dark: #0056b3;
+  --bg: #ffffff;
+  --text: #222222;
+}
+
+.dark-mode {
+  --bg: #1e1e1e;
+  --text: #e0e0e0;
+  --primary: #00c6ff;
+  --primary-light: #33ddff;
+  --primary-dark: #0096c7;
+}
